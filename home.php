@@ -205,7 +205,7 @@ endif;?>
 <!-- header end -->
 
 <!-- main slide -->
-<div id="pslide" class="carousel slide" data-ride="carousel">
+<div id="pslide" class="carousel slide" data-ride="carousel" style="margin-left: 40px; margin-right:40px">
     
     <!-- slider -->
 
@@ -255,16 +255,16 @@ endif;?>
 <!-- slider end -->
 
 
-<!-- testimonial  start -->
-<section class="director" id="director">
+<!-- provost  start -->
+<section class="provost" id="provost">
 
 <center> <h1 class="heading">  <span>Provost</span> </h1></center>
 
-<div class="box-container">
+<div class="box-container" >
 
     <div class="box">
-        <img src="images/1642924835587.jpg" alt="">
-        <h2>Dr. Ali Azam Talukder</h2>
+        <img src="images/face.png" alt="">
+        <h1>Dr. Ali Azam Talukder</h1>
         <h4>Professor</h4>
         <h4>Department of Microbiology</h4>
         <h5>Jahangirnagar University, Savar, Dhaka-1342, Bangladesh.</h5>
@@ -279,8 +279,13 @@ endif;?>
 </div>
 
 </section>
+<!-- provost  end -->
+
+
+<!-- photo galery -->
+<section class="photo_galary" style="width: 100%; margin-top:20px">
 <div >
-    <h2 class="display-1 bdr my-4 text-center">Photo Gallary</h2>
+    <h2 class="display-1 bdr my-4 text-center" style="margin-top: 10px;">Photo Galary</h2>
 </div>
 <!-- slick carousel/testimonial -->
 <div class="bg-dark">
@@ -373,10 +378,12 @@ endif;?>
      </div>
     </div>
 </div>
+</section>
 
 <!-- testimonial  end -->
 
 <!-- portfolio start -->
+<section style="margin-top: 20px;">
 <div >
     <h2 class="display-1 bdr my-4 text-center">About</h2>
 </div>
@@ -401,6 +408,7 @@ endif;?>
        </a>
      </li>
     </ul>
+    
     <!-- tab button end-->
 
  <!-- tab button content start-->
@@ -485,10 +493,12 @@ endif;?>
     <!-- tab button content end-->
     
 </div>
+</section>
 
 <!-- portfolio end -->
 
 <!-- contact start -->
+<section style="margin-top: 30px;">
 <div id="contact">
     <h2 class="display-1 bdr my-4 text-center">Contact</h2>
 </div>
@@ -514,7 +524,7 @@ endif;?>
     </div>
 
     <div>
-     <h3 class="text-center my-4" style="border-bottom: 1px solid red;">Send Your Message</h3>
+     <h3 class="text-center my-4" style="border-bottom: 1px solid red; margin-top:10px">Send Your Message</h3>
 
      <form action="">
        <div class="row">
@@ -542,6 +552,7 @@ endif;?>
     </div>
     
 </div>
+</section>
 
 <!-- contact end -->
 
@@ -553,27 +564,27 @@ endif;?>
 
     <div class="box">
         <h3>quick links</h3>
-        <a href="/html/index.html"> <i class="fas fa-chevron-right"></i> home </a>
-        <a href="services.html"> <i class="fas fa-chevron-right"></i> services </a>
-        <a href="about.html"> <i class="fas fa-chevron-right"></i> about </a>
-        <a href="doctors.html"> <i class="fas fa-chevron-right"></i> doctors </a>
-        <a href="http://localhost:3000/php/booking.php"> <i class="fas fa-chevron-right"></i> booking </a>
+        <a href="#"> <i class="fas fa-chevron-right"></i> home </a>
+        <a href="Provost/DispProvost.php"> <i class="fas fa-chevron-right"></i> Provost </a>
+        <a href="Student/DispStudent.php"> <i class="fas fa-chevron-right"></i> Student </a>
+        <a href="Staff/DispStaff.php"> <i class="fas fa-chevron-right"></i> Staff </a>
+        <a href="FacilitiesProblem/DispFP.php"> <i class="fas fa-chevron-right"></i> Facilities Problem</a>
     </div>
 
     <div class="box">
-        <h3>our services</h3>
-        <a href="#"> <i class="fas fa-chevron-right"></i> Free Checkups </a>
-        <a href="#"> <i class="fas fa-chevron-right"></i> 24/7 Ambulance </a>
-        <a href="#"> <i class="fas fa-chevron-right"></i> Medicines </a>
-        <a href="#"> <i class="fas fa-chevron-right"></i> Expert Doctors </a>
-        <a href="#"> <i class="fas fa-chevron-right"></i> Bed Facility </a>
+        <h3>Useful Links</h3>
+        <a href="#"> <i class="fas fa-chevron-right"></i> NOC &GO </a>
+        <a href="#"> <i class="fas fa-chevron-right"></i> Download Form </a>
+        <a href="#"> <i class="fas fa-chevron-right"></i> Result </a>
+        <a href="#"> <i class="fas fa-chevron-right"></i> Reaserch Work </a>
+        <a href="#"> <i class="fas fa-chevron-right"></i> Office </a>
     </div>
 
     <div class="box">
         <h3>contact info</h3>
         <a href="#"> <i class="fas fa-phone"></i> 1324 </a>
-        <a href="#"> <i class="fas fa-phone"></i> 01715054872 </a>
-        <a href="#"> <i class="fas fa-envelope"></i> medicalju123@gmail.com </a>
+        <a href="#"> <i class="fas fa-phone"></i> 02224491045-51  </a>
+        <a href="#"> <i class="fas fa-envelope"></i> shaheedsalambarkathalll@gmail.com </a>
         <a href="https://goo.gl/maps/gCv8rquk261n7FnXA"> <i class="fas fa-map-marker-alt"></i> Jahangirnagar University, Savar, Dhaka-1342, Bangladesh. </a>
     </div>
 
@@ -588,7 +599,7 @@ endif;?>
 
 </div>
 
-<div class="credit"> created by <span>Group 16</span> | all rights reserved </div>
+<div class="credit"> created by <span>Group 8</span> | all rights reserved </div>
 
 </section>
 

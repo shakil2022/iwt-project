@@ -126,14 +126,17 @@ section:nth-child(even){
     cursor: pointer;
     display: none;
 }
+#provost{
+    margin-bottom: 80px;
+}
 
-.director .box-container{
+.provost .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:2rem;
 }
 
-.director .box-container .box{
+.provost .box-container .box{
     text-align: center;
     background:#fff;
     border-radius: .5rem;
@@ -142,7 +145,7 @@ section:nth-child(even){
     padding:2rem;
 }
 
-.director .box-container .box img{
+.provost .box-container .box img{
     height: 20rem;
     border:var(--border);
     border-radius: .5rem;
@@ -150,22 +153,22 @@ section:nth-child(even){
     margin-bottom: 1rem;
 }
 
-.director .box-container .box h3{
+.provost .box-container .box h3{
     color:var(--black);
     font-size: 2rem;
 }
 
-.director .box-container .box span{
+.diprovostrector .box-container .box span{
     color:var(--green);
     font-size: 1.5rem;
 }
 
-.director .box-container .box .share{
+.provost .box-container .box .share{
     padding-top: 1rem;
     
 }
 
-.director .box-container .box .share h4{
+.provost .box-container .box .share h4{
    
     font-size: 1.2rem;
 
@@ -174,7 +177,7 @@ section:nth-child(even){
     
 }
 
-.director .box-container .box .share a:hover{
+.provost .box-container .box .share a:hover{
     background:var(--green);
     color:#fff;
     box-shadow: var(--box-shadow);

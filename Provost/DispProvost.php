@@ -8,8 +8,13 @@
       .tdr{
         text-align:center;
       }
+      body{
+        background-image: url(../images/sea.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
       .button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50; 
   border: none;
   color: white;
   padding: 10px 25px;
@@ -20,12 +25,15 @@
   display: inline-block;
   font-size: 16px;
 }
+.table1{
+  margin-top: 70px;
+}
 
       </style>
 	</head> 
   
-	<body bgcolor="lightblue"> 
-	<table align="center" border="1px" style="width:1000px; line-height:40px;"> 
+	<body > 
+	<table align="center"class="table1" border="3px solid black" style="width:1000px; line-height:40px;"> 
 	<tr> 
 		<th colspan="8"><h2>Provost Record</h2></th> 
 		</tr> 
@@ -36,6 +44,7 @@
 			  <th> Email </th> 
 			  <th> Designation</th> 			  
 		</tr> 
+   
 		<?php 
     include 'connection.php';
     $sql = "select * from Provost ";
@@ -50,7 +59,7 @@
     <td class="tdr"><?php echo $row1['Email']; ?></td>
     <td class="tdr"><?php echo $row1['Designation']; ?></td>
     <td style="width: 140px;">
-    <button><a href="Delete.php?P_ID=<?php echo $row1["P_ID"]; ?>">Delete</a></button>
+    <button class="btn btn-danger"><a href="Delete.php?P_ID=<?php echo $row1["P_ID"]; ?>">Delete</a></button>
                             </td>
 		</tr> 
 	<?php 

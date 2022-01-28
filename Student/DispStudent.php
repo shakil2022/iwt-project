@@ -5,6 +5,11 @@
 		<title> Fetch Data From Database </title> 
     
     <style>
+       body{
+        background-image: url(../images/sea2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
       .tdr{
         text-align:center;
       }
@@ -20,15 +25,20 @@
   display: inline-block;
   font-size: 16px;
 }
+.table2{
+  margin-top: 70px;
+
+}
 
       </style>
 	</head> 
   
 	<body bgcolor="lightblue"> 
-	<table align="center" border="1px" style="width:1000px; line-height:40px;"> 
+	<table align="center" class="table2" border="3px solid black" style="width:1000px; line-height:40px;"> 
 	<tr> 
 		<th colspan="8"><h2>Student Record</h2></th> 
-		</tr> 
+		</tr>
+   
 			  <th> Student ID </th> 
 			  <th> Name </th> 
 			  <th> Department </th> 
