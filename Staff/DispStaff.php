@@ -50,6 +50,7 @@
     <td class="tdr"><?php echo $row1['Designation']; ?></td>
     <td style="width: 140px;">
                             <button><a href="Delete.php?S_ID=<?php echo $row1["S_ID"]; ?>">Delete</a></button>
+                            <button><a href="update.php?S_ID=<?php echo $row1["S_ID"]; ?>">Update</a></button>
 
                             </td>
 		</tr> 

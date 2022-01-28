@@ -347,17 +347,18 @@ endif;?>
 <!-- testimonial  start -->
 <section class="director" id="director">
 
-<center> <h1 class="heading"> our <span>director</span> </h1></center>
+<center> <h1 class="heading"> Provost  </h1></center>
 
 <div class="box-container">
 
     <div class="box">
         <img src="images/1642924835587.jpg" alt="">
-        <h3>DR. SHAMSUR RAHMAN</h3>
-        <span>Chief Medical Officer (Acting)</span>
+        <h3>Dr. Ali Azam Talukder</h3>
+        <h5>Professor</h5>
+        <h5>Department of Microbiology</h5>
+        <h5>Jahangirnagar University, Savar, Dhaka-1342, Bangladesh.</h5>
         <div class="share">
-            <h4>Email: drsrlabu19@gmail.com</h4>
-            <h4>Email: drsrlabu@yahoo.com</h4>
+            <h4>Email: aat@juniv.edu</h4>
             <h4>Office Phone: 1324</h4>
             <h4>Home Phone: 01715054872</h4>
         </div>
