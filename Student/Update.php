@@ -2,7 +2,10 @@
 include_once 'connection.php';
 if(count($_POST)>0) {
 mysqli_query($conn,"UPDATE student set Stu_id='" . $_POST['Stu_id'] . "', Name='" . $_POST['Name'] . "', Department='" . $_POST['Department'] . "', Session='" . $_POST['Session'] . "' ,Room_Number='" . $_POST['Room_Number'] . "' ,Floor_Number='" . $_POST['Floor_Number'] . "' WHERE Stu_id='" . $_POST['Stu_id'] . "'");
-$message = "Record Modified Successfully";
+//  $message = "Record Modified Successfully";
+  include "DispStudent.php";
+//require "DispStudent.php";
+
 }
 $result = mysqli_query($conn,"SELECT * FROM Student WHERE Stu_id='" . $_GET['Stu_id'] . "'");
 $row= mysqli_fetch_array($result);
@@ -16,7 +19,7 @@ $row= mysqli_fetch_array($result);
 <div><?php if(isset($message)) { echo $message; } ?>
 </div>
 <div style="padding-bottom:5px;">
-<a href="retrieve.php">Employee List</a>
+<!-- <a href="retrieve.php">Employee List</a> -->
 </div>
 Student ID: <br>
 <input type="hidden" name="Stu_id" class="txtField" value="<?php echo $row['Stu_id']; ?>">
@@ -37,6 +40,7 @@ Room_Number:<br>
 Floor_Number:<br>
 <input type="text" name="Floor_Number" class="txtField" value="<?php echo $row['Floor_Number']; ?>">
 <br>
+<!-- <button>submit</button> -->
 <input type="submit" name="submit" value="Submit" class="buttom">
 
 </form>
