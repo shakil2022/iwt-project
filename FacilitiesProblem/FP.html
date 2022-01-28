@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Facilities Problem</h1>
+          </div>
+          <div class="panel-body">
+            <form action="FP.php" method="post">
+              <div class="form-group">
+                <label for="Room_Number">Room Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="Room_Number"
+                  name="Room_Number"
+                />
+              </div>
+              <div class="form-group">
+                <label for="Vacant_Seat">Vacant Seat</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="Vacant_Seat"
+                  name="Vacant_Seat"
+                />
+              </div>
+              <div class="form-group">
+                <label for="Damaged_Fan">Damaged Fan</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="Damaged_Fan"
+                  name="Damaged_Fan"
+                />
+              </div>
+              <div class="form-group">
+                <label for="Damaged_Light">Damaged Light</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="Damaged_Light"
+                  name="Damaged_Light"
+                />
+              </div>
+              <button> <a href="DispFP.php" class="btn btn-success"><b>Submit</b></a></button>
+            </form>
+          </div>
+          <div class="panel-footer text-right">
+            <small>&copy; Hall Management System</small>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  </body>
+</html>
