@@ -12,7 +12,9 @@ endif;?>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
-
+    <link rel="shortcut icon" href="https://juniv.edu/images/favicon.ico">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -79,29 +81,24 @@ endif;?>
 </style>
 </head>
 <body>
-    <!-- header start -->
-<header>
-    <!-- navigation start -->
+
+<!-- <header>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-     <!-- logo -->
+   
      <a href="index.html" class="navbar-brand"><h3 class="text-uppercase">Shaheed Salam-Barkat  Hall</h3></a>
-     <!-- responsive collapse menu -->
+     
      <button class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button" >
        <span class="navbar-toggler-icon"></span>
      </button>
-     <!-- responsive collapse menu end -->
+     
 
-     <!-- nav menu start -->
+   
      <div class="collapse navbar-collapse menu-bar" id="menu">
        <ul class="navbar-nav ">
          <li class="nav-item active">
            <a href="Provost/DispProvost.php" class="nav-link">Provost</a>
            <div class="sub-menu-1">
-            <!-- <ul>
-              <li><a href="#">Call</a></li>
-              <li><a href="#">Call</a></li>
-              <li><a href="#">Call</a></li>
-            </ul> -->
+           >
              
            </div>
          </li>
@@ -120,22 +117,37 @@ endif;?>
          </li>
          <li class="nav-item">
            <a href="FacilitiesProblem/DispFP.php" class="nav-link">Facilities Problem</a>
-         </li>
+         </li> -->
 
-          <!--   search -->
+         <header class="header">
+        <img src="images/ju_logo.png" alt style="height: 70px; width: 65px;">
+        <a href="" class="logo">Shaheed Salam-Barkat Hall</a>
 
-    <div class="collapse navbar-collapse justify-content-end" id="menu2">
+
+        <nav class="navbar">
+           <a href="Provost/DispProvost.php">Provost</a>
+            <a href="Student/DispStudent.php">Student</a>
+            <a href="Staff/DispStaff.php">Staff</a>
+            <a href="Floor/DispFloor.php">Floor</a>
+            <a href="Room/DispRoom.php">Room</a>
+            <a href="FacilitiesProblem/DispFP.php">Facilities Problem</a>
+            <a href="http://localhost:3000/php/index.php">logout</a>
+        </nav>
+
+        <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
+
+    <!-- <div class="collapse navbar-collapse justify-content-end" id="menu2">
      <form action="" class="form-inline">
        <input type="text" class="form-control mr-2 ">
        <button type="submit" class="btn btn-success my-1">Search</button>
      </form>
-    </div>
-    <div class="collapse navbar-collapse justify-content-end" id="modal">
-              <button> <a href="logout process.php"></a> <b> Log Out</b></button>
+    </div> -->
+    <!-- <div class="collapse navbar-collapse justify-content-end" id="modal">
+              <button> <a href="logout process.php"></a> <b> Log Out</b></button> -->
 
               
          <!--  <button type="button" class="btn btn-outline-success sign-btn" data-toggle="modal" data-target="#signUpModal">Sign Up</button> -->
-      </div>
+      <!-- </div> -->
 
 </nav>
     <!----Login form---->
@@ -184,111 +196,10 @@ endif;?>
           </div> <!----modal content close--->
       </div> <!----modal dialog close--->
   </div> <!----modal close--->
-  <!----Sign up form---->
-  <!-- <div class="modal fade" id="signUpModal">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <div class="modal-title w-100">
-                      <h4 class="text-muted">Sign Up for free</h4>
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  </div> -->
-              </div> <!----modal header close-->
-<!--               <div class="modal-body">
-                <form action="" class="was-validated">
-                  <div class="form-group">
-                      <label for="fnm" class="text-info font-weight-bold">First Name:</label>
-                      <input type="text" class="form-control" id="fnm" placeholder="Enter Your First Name" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="lnm" class="text-info font-weight-bold">Last Name:</label>
-                      <input type="text" class="form-control" id="lnm" placeholder="Enter Your last Name" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="phn" class="text-info font-weight-bold">Phone Number:</label>
-                      <input type="tel" class="form-control" id="phn" placeholder="Enter Your phone number" required>
-                    </div>
-                     <div class="form-group">
-                      <label for="S_id" class="text-info font-weight-bold">Student ID:</label>
-                      <input type="id" class="form-control" id="S_id" placeholder="Enter Your Student ID" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="S_id" class="text-info font-weight-bold">Session:</label>
-                      <input type="times" class="form-control" id="#" placeholder="Enter Your Session" required>
-                    </div>
-
-                    <div class="form-group">
-                      <label for="My" class="text-info font-weight-bold">Department</label>
-                      <select name="#" class="control" id="My" style="width: 100%;">
-                          <option value="select your Country">Select Your Department</option>
-                          <option value="#">IIT</option>
-                          <option value="#">CSE</option>
-                          <option value="#">English</option>
-                          <option value="#">Bangla</option>
-                          <option value="#">IBA</option>
-                          <option value="#">IRS</option>
-                          <option value="#">CLC</option>
-                          <option value="#">Statistics</option>
-                          <option value="#">Mathematics</option>
-                          <option value="#">Economics</option>
-                          <option value="#">Geography</option>
-                          <option value="#">Physics</option>
-                          <option value="#">Chemistry</option>
-                          <option value="#">Zoology</option>
-                          <option value="#">Botany</option>
-                          <option value="#">IER</option>
-                          <option value="#">G&P</option>
-                          <option value="#">DaD</option>
-                          <option value="#">Enthropology</option>
-                          <option value="#">History</option>
-                          <option value="#">Philosophy</option>
-                          <option value="#">Biochemistry</option>
-                          <option value="#">Microbiology</option>
-                          <option value="#">Pharmacy</option>
-                          <option value="#">Finance& Banking</option>
-                          <option value="#">Management Studies</option>
-                          <option value="#">Marketing</option>
-                      </select>
-                    </div>
-
-                  <div class="classrm-group" >
-                      <label for="email" class="text-info font-weight-bold">Email:</label>
-                      <input type="email" class="form-control" id="email" placeholder="Enter Your Email" required>
-                      <div class="valid-feedback">
-                          <strong>Your email address is valid</strong>
-                      </div>
-                      <div class="invalid-feedback">
-                          <strong>Please Enter a valid email address</strong>
-                      </div>
-                    </div>
-                   <div class="form-group">
-                      <label for="pwd" class="text-primary font-weight-bold">Password:</label>
-                      <input type="password" class="form-control" id="pwd" placeholder="Enter Your Password" minlength="6" maxlength="8" required>
-                      <div class="valid-feedback">
-                          <strong>Your password is very strong</strong>
-                      </div>
-                      <div class="invalid-feedback">
-                        <strong>Enter your password first</strong>
-                      </div>
-                  </div> 
-                   <div class="form-group form-group-check">
-                      <label for="chk" class="form-group-label text-muted font-weight-bold">
-                       <input type="checkbox" class="form-group-input "> Remember Me
-                      </label>
-                  </div>  
-                  <input type="submit" class="form-control btn btn-outline-success font-weight-bold" value="Sign Up"> -->
-                </form> <!----form close--->
-              </div> <!----modal body close--->
-              <!-- <div class="modal-footer justify-content-start">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-              </div> -->
-          </div> <!----modal content close--->
-      </div> <!----modal dialog close--->
-  </div> <!----modal close--->
+ 
+                
   
-      </ul>
-     </div>
-     <!-- nav menu end -->
+     
     </nav>
 </header>
 <!-- header end -->
@@ -305,7 +216,7 @@ endif;?>
        <div class="carousel-caption d-none d-md-block">
        <!--   <h2 class="display-1 text-danger">This is my first slider</h2> -->
        </div>
-       <img src="images/slider1.jpg" height="600px" width="100%" alt="">
+       <img src="images/slider1.jpg" height="700px" width="100%" alt="">
      </div>
      <!-- 2nd slider -->
      <div class="carousel-item">
@@ -313,7 +224,7 @@ endif;?>
        <div class="carousel-caption">
         <!--  <h2 class="display-1">This is my second slider</h2> -->
        </div>
-       <img src="images/slider2.jpg" height="600px" width="100%" alt="">
+       <img src="images/slider2.jpg" height="700px" width="100%" alt="">
      </div>
      <!-- 3rd slider -->
      <div class="carousel-item">
@@ -321,7 +232,7 @@ endif;?>
        <div class="carousel-caption">
        <!--   <h2 class="display-1">This is my third slider</h2> -->
        </div>
-       <img src="images/slider3.jpg" height="600px" width="100%" alt="">
+       <img src="images/slider3.jpg" height="700px" width="100%" alt="">
      </div>
      <!-- 4th slider -->
      <div class="carousel-item">
@@ -329,7 +240,7 @@ endif;?>
        <div class="carousel-caption">
       <!--    <h2 class="display-1">This is my third slider</h2> -->
        </div>
-       <img src="images/slider4.jpg" height="600px" width="100%" alt="">
+       <img src="images/slider4.jpg" height="700px" width="100%" alt="">
      </div>
     </div>
     
@@ -347,20 +258,20 @@ endif;?>
 <!-- testimonial  start -->
 <section class="director" id="director">
 
-<center> <h1 class="heading"> Provost  </h1></center>
+<center> <h1 class="heading">  <span>Provost</span> </h1></center>
 
 <div class="box-container">
 
     <div class="box">
         <img src="images/1642924835587.jpg" alt="">
-        <h3>Dr. Ali Azam Talukder</h3>
-        <h5>Professor</h5>
-        <h5>Department of Microbiology</h5>
+        <h2>Dr. Ali Azam Talukder</h2>
+        <h4>Professor</h4>
+        <h4>Department of Microbiology</h4>
         <h5>Jahangirnagar University, Savar, Dhaka-1342, Bangladesh.</h5>
         <div class="share">
-            <h4>Email: aat@juniv.edu</h4>
-            <h4>Office Phone: 1324</h4>
-            <h4>Home Phone: 01715054872</h4>
+            <h5>Email: aat@juniv.edu</h5>
+            <h5>Office Phone: 1324</h5>
+            <h5>Home Phone: 01715054872</h5>
         </div>
     </div>
 
@@ -585,9 +496,9 @@ endif;?>
 <div class="container">
     <div class="row">
      <div class="col-md-8">
-       <!-- call the map -->
+
        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.2034418647563!2d90.26202471429966!3d23.882403589639125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755e9a02b7f1e89%3A0x6d20e40f3a231f37!2sShaheed%20Salam%20Barkat%20Hall!5e0!3m2!1sen!2sbd!4v1643004346139!5m2!1sen!2sbd" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      <!--  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.0968402611893!2d90.2689772142997!3d23.88618448949393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755e9bcca9e8a09%3A0x9767003464a0acf0!2sSheikh%20Hasina%20Hall!5e0!3m2!1sen!2sbd!4v1642074330254!5m2!1sen!2sbd" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+     
        
      </div>
      <div class="col-md-4">
@@ -636,11 +547,50 @@ endif;?>
 
 <!-- footer start -->
 
-<footer class="bg-dark">
-    <div class="container p-5">
-     <h2 class="text-center text-light">Copyright &copy; Jahangirnagar University,Savar,Dhaka</h2>
+<section class="footer">
+
+<div class="box-container">
+
+    <div class="box">
+        <h3>quick links</h3>
+        <a href="/html/index.html"> <i class="fas fa-chevron-right"></i> home </a>
+        <a href="services.html"> <i class="fas fa-chevron-right"></i> services </a>
+        <a href="about.html"> <i class="fas fa-chevron-right"></i> about </a>
+        <a href="doctors.html"> <i class="fas fa-chevron-right"></i> doctors </a>
+        <a href="http://localhost:3000/php/booking.php"> <i class="fas fa-chevron-right"></i> booking </a>
     </div>
-</footer>
+
+    <div class="box">
+        <h3>our services</h3>
+        <a href="#"> <i class="fas fa-chevron-right"></i> Free Checkups </a>
+        <a href="#"> <i class="fas fa-chevron-right"></i> 24/7 Ambulance </a>
+        <a href="#"> <i class="fas fa-chevron-right"></i> Medicines </a>
+        <a href="#"> <i class="fas fa-chevron-right"></i> Expert Doctors </a>
+        <a href="#"> <i class="fas fa-chevron-right"></i> Bed Facility </a>
+    </div>
+
+    <div class="box">
+        <h3>contact info</h3>
+        <a href="#"> <i class="fas fa-phone"></i> 1324 </a>
+        <a href="#"> <i class="fas fa-phone"></i> 01715054872 </a>
+        <a href="#"> <i class="fas fa-envelope"></i> medicalju123@gmail.com </a>
+        <a href="https://goo.gl/maps/gCv8rquk261n7FnXA"> <i class="fas fa-map-marker-alt"></i> Jahangirnagar University, Savar, Dhaka-1342, Bangladesh. </a>
+    </div>
+
+    <div class="box">
+        <h3>follow us</h3>
+        <a target="_blank"  href="https://www.facebook.com/Medical-Centre-Jahangirnagar-University-111006755903584/?ref=page_internal"> <i class="fab fa-facebook-f"></i> facebook </a>
+        <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+        <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+        <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+        <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+    </div>
+
+</div>
+
+<div class="credit"> created by <span>Group 16</span> | all rights reserved </div>
+
+</section>
 
 
 
