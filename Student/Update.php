@@ -3,7 +3,7 @@ include_once 'connection.php';
 if(count($_POST)>0) {
 mysqli_query($conn,"UPDATE student set Stu_id='" . $_POST['Stu_id'] . "', Name='" . $_POST['Name'] . "', Department='" . $_POST['Department'] . "', Session='" . $_POST['Session'] . "' ,Room_Number='" . $_POST['Room_Number'] . "' ,Floor_Number='" . $_POST['Floor_Number'] . "' WHERE Stu_id='" . $_POST['Stu_id'] . "'");
 //  $message = "Record Modified Successfully";
-  include "DispStudent.php";
+include "DispStudent.php";
 //require "DispStudent.php";
 
 }
