@@ -1,13 +1,15 @@
 <?php
 include_once 'connection.php';
 if(count($_POST)>0) {
-mysqli_query($conn,"UPDATE facilities_problem set Room_Number='" . $_POST['Room_Number'] . "', Vacant_Seat='" . $_POST['Vacant_Seat'] . "', Damaged_Fan='" . $_POST['Damaged_Fan'] . "', Damaged_Light='" . $_POST['Damaged_Light'] . "' WHERE Room_Number='" . $_POST['Room_Number'] . "'");
+mysqli_query($conn,"UPDATE facility_problem set Damaged_Fan_Un='" . $_POST['Damaged_Fan_Un'] . "',
+ Damaged_Fan_Pro='" . $_POST['Damaged_Fan_Pro'] . "', Damaged_Fan_Sol='" . $_POST['Damaged_Fan_Sol'] . "',
+  Damaged_Light_Un='" . $_POST['Damaged_Light_Un'] . "',Damaged_Light_Pro='" . $_POST['Damaged_Light_Pro'] . "',Damaged_Light_Sol='" . $_POST['Damaged_Light_Sol'] . "',date='" . $_POST['date'] . "' WHERE Room_Number='" . $_POST['Room_Number'] . "'");
 //  $message = "Record Modified Successfully";
 include "DispFP.php";
 //require "DispStudent.php";
 
 }
-$result = mysqli_query($conn,"SELECT * FROM facilities_problem WHERE Room_Number='" . $_GET['Room_Number'] . "'");
+$result = mysqli_query($conn,"SELECT * FROM facility_problem WHERE Room_Number='" . $_GET['Room_Number'] . "'");
 $row= mysqli_fetch_array($result);
 ?>
 <html>
@@ -38,14 +40,26 @@ Room Number: <br>
 <input style="width: 50%; height:30px; " type="hidden" name="Room_Number" class="txtField" value="<?php echo $row['Room_Number']; ?>">
 <input style="width: 50%; height:30x; " type="number" name="Room_Number"  value="<?php echo $row['Room_Number']; ?>">
 <br>
-Vacant Seat: <br>
-<input style="width: 50%; height:30px; " type="number" name="Vacant_Seat" class="txtField" value="<?php echo $row['Vacant_Seat']; ?>">
+Damaged Fan Unsolved: <br>
+<input style="width: 50%; height:30px; " type="number" name="Damaged_Fan_Un" class="txtField" value="<?php echo $row['Damaged_Fan_Un']; ?>">
 <br>
-Damaged Fan:<br>
-<input style="width: 50%; height:30px; " type="number" name="Damaged_Fan" class="txtField" value="<?php echo $row['Damaged_Fan']; ?>">
+Damaged Fan Processing:<br>
+<input style="width: 50%; height:30px; " type="number" name="Damaged_Fan_Pro" class="txtField" value="<?php echo $row['Damaged_Fan_Pro']; ?>">
 <br>
-Damaged Light:<br>
-<input style="width: 50%; height:30px; " type="number" name="Damaged_Light" class="txtField" value="<?php echo $row['Damaged_Light']; ?>">
+Damaged Fan Solved:<br>
+<input style="width: 50%; height:30px; " type="number" name="Damaged_Fan_Sol" class="txtField" value="<?php echo $row['Damaged_Fan_Sol']; ?>">
+<br>
+Damaged Light Unsolved:<br>
+<input style="width: 50%; height:30px; " type="number" name="Damaged_Light_Un" class="txtField" value="<?php echo $row['Damaged_Light_Un']; ?>">
+<br>
+Damaged Light Processing:<br>
+<input style="width: 50%; height:30px; " type="number" name="Damaged_Light_Pro" class="txtField" value="<?php echo $row['Damaged_Light_Pro']; ?>">
+<br>
+Damaged Ligth Solved:<br>
+<input style="width: 50%; height:30px; " type="number" name="Damaged_Light_Sol" class="txtField" value="<?php echo $row['Damaged_Light_Sol']; ?>">
+<br>
+Last Modifed Date:<br>
+<input style="width: 50%; height:30px; " type="date" name="date" class="txtField" value="<?php echo $row['date']; ?>">
 <br>
 <!-- <br>
 Floor_Number:<br>
