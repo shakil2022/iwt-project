@@ -5,6 +5,11 @@
 		<title> Fetch Data From Database </title> 
     
     <style>
+      body{
+        background-image: url(../images/img2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
       .tdr{
         text-align:center;
       }
@@ -24,7 +29,7 @@
       </style>
 	</head> 
   
-	<body bgcolor="lightblue"> 
+	<body > 
 	<table align="center" border="1px" style="width:1000px; line-height:40px;"> 
 	<tr> 
 		<th colspan="8"><h2>Room</h2></th> 
@@ -33,6 +38,7 @@
 			  <th> Number of Table </th> 
 			  <th> Number of bed </th> 
 			  <th> Floor Number </th> 
+        <th> Opeations </th> 
 			  
 		</tr> 
 		<?php 

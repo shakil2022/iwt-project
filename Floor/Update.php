@@ -4,7 +4,9 @@ if(count($_POST)>0) {
 mysqli_query($conn,"UPDATE floor set Floor_Number='" . $_POST['Floor_Number'] . "', Block='" . $_POST['Block'] . "', Num_of_Kitchen='" . $_POST['Num_of_Kitchen'] . "', Num_of_Room='" . $_POST['Num_of_Room'] . "', Num_of_Washroom='" . $_POST['Num_of_Washroom'] . "' WHERE Floor_Number='" . $_POST['Floor_Number'] . "'");
 //  $message = "Record Modified Successfully";
 include "DispFloor.php";
-//require "DispStudent.php";
+// require "DispStudent.php";
+// echo 'record';
+
 
 }
 $result = mysqli_query($conn,"SELECT * FROM floor WHERE Floor_Number='" . $_GET['Floor_Number'] . "'");
@@ -27,7 +29,7 @@ $row= mysqli_fetch_array($result);
 </style>
 </head>
 <body>
-<form name="frmUser" method="post" action="">
+<form name="frmUser" method="post" action="#">
 <div><?php if(isset($message)) { echo $message; } ?>
 </div>
 <!-- <div style="padding-bottom:5px;">
@@ -56,8 +58,11 @@ Floor_Number:<br>
 <input style="width: 50%; height:30px; " type="text" name="Floor_Number" class="txtField" value="<?php echo $row['Floor_Number']; ?>">
 <br> -->
 <!-- <button>submit</button> -->
-<input style="width: 50%; height:30px; margin-top:30px " type="submit" name="submit" value="Submit" class="buttom">
+<!-- <input style="width: 50%; height:30px; margin-top:30px " type="submit" name="submit" value="Submit" class="buttom"> -->
+<button>  Submit</button>
+
 </section>
+
 
 </form>
 </body>

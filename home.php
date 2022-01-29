@@ -125,13 +125,15 @@ endif;?>
 
 
         <nav class="navbar">
-           <a href="Provost/DispProvost.php">Provost</a>
-            <a href="Student/DispStudent.php">Student</a>
-            <a href="Staff/DispStaff.php">Staff</a>
-            <a href="Floor/DispFloor.php">Floor</a>
-            <a href="Room/DispRoom.php">Room</a>
-            <a href="FacilitiesProblem/DispFP.php">Facilities Problem</a>
-            <a href="http://localhost:3000/php/index.php">logout</a>
+           <a href="Provost/DispProvost.php"style=" text-decoration:none; " >Provost</a>
+            <a href="Student/DispStudent.php"style=" text-decoration:none; " >Student</a>
+            <a href="Staff/DispStaff.php"style=" text-decoration:none; ">Staff</a>
+            <a href="Floor/DispFloor.php"style=" text-decoration:none; ">Floor</a>
+            <a href="Room/DispRoom.php"style=" text-decoration:none; ">Room</a>
+            <a href="FacilitiesProblem/DispFP.php"style=" text-decoration:none; ">Facilities Problem</a>
+            <!-- <a href="http://localhost:3000/php/index.php">logout <i class="fa fa-sign-out" aria-hidden="true"></i> -->
+            <a href="logout process.php"style=" text-decoration:none; " >logout <i class="fa fa-sign-out" aria-hidden="true"></i>
+</a>
         </nav>
 
         <!-- <div id="menu-btn" class="fas fa-bars"></div> -->

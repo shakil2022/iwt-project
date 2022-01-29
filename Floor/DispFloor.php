@@ -39,7 +39,7 @@
 		</tr> 
 		<?php 
     include 'connection.php';
-    $sql = "select * from Floor";
+    $sql = "select * from floor";
     $query = mysqli_query($conn, $sql);
      while($row1=mysqli_fetch_array($query)) 
 		{ 
@@ -50,8 +50,8 @@
 		<td class="tdr"><?php echo $row1['Num_of_Room']; ?></td> 
     <td class="tdr"><?php echo $row1['Num_of_Washroom']; ?></td>
     <td style="width: 140px;">
-    <button><a href="Delete.php?Floor_Number=<?php echo $row1["Floor_Number"]; ?>">Delete</a></button>
-    <button><a href="Update.php?Floor_Number=<?php echo $row1["Floor_Number"]; ?>">Update</a></button>
+    <button><a href="Delete.php?Floor_Number=<?php echo $row1["Floor_Number"]; ?>"style=" text-decoration:none; ">Delete</a></button>
+    <button><a href="Update.php?Floor_Number=<?php echo $row1["Floor_Number"]; ?>"style=" text-decoration:none; ">Update</a></button>
                             </td>
 		</tr> 
 	<?php 

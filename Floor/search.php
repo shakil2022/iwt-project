@@ -12,6 +12,13 @@ $result = mysqli_query($conn,"SELECT * FROM Floor where Floor_Number='$Floor_Num
 <head>
 <title> Retrive data</title>
 <style>
+  body{
+    background-image: url(../images/slider3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+  }
 table, th, td {
     border: 1px solid black;
 }
@@ -31,11 +38,17 @@ table, th, td {
   display: inline-block;
   font-size: 16px;
 }
+#tdr{
+     width: 50%;
+     margin-top: 70px;
+     align-items: center;
+}
+
 
 </style>
 </head>
 <body>
-<table  class="center table table-striped" >
+<table id="tdr" class="center table table-striped" >
 <tr>
 <td>Floor Number</td>
 <td>Block</td>
