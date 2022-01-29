@@ -1,6 +1,6 @@
 <?php
 include_once 'connection.php';
-$sql = "DELETE FROM facilities_problem WHERE Room_Number='" . $_GET["Room_Number"] . "'";
+$sql = "DELETE FROM facility_problem WHERE Room_Number='" . $_GET["Room_Number"] . "'";
 if (mysqli_query($conn, $sql)) {
     include 'DispFP.php';
 } else {
