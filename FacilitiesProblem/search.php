@@ -33,11 +33,12 @@ $result = mysqli_query($conn, "SELECT Room_Number,sum(Damaged_Fan_Un+Damaged_Lig
       text-decoration: none;
       display: inline-block;
       font-size: 16px;
+    
     }
   </style>
 </head>
 
-<body>
+<body style="background-color:darkslategray;">
   <table class="center table table-striped">
     <tr>
       <td>Room Number</td>

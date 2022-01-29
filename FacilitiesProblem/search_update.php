@@ -34,17 +34,21 @@ $result = mysqli_query($conn, "SELECT Room_Number,sum(Damaged_Fan_Un+Damaged_Lig
       display: inline-block;
       font-size: 16px;
     }
+    .search{
+        margin-top: 70px;
+        margin-left: 400px;
+    }
+    
   </style>
 </head>
 
-<body>
-  <table class="center table table-striped">
+<body style="background-color: darkslategray;">
+  <table class="search" class="center table table-striped">
     <tr>
       <td>Room Number</td>
       <td> Total Unsolved</td>
       <td> Total Processing</td>
       <td> Total Solved</td>
-      <td> Last Modified Date</td>
     </tr>
     <?php
     while ($row1 = mysqli_fetch_array($result)) {
@@ -54,7 +58,7 @@ $result = mysqli_query($conn, "SELECT Room_Number,sum(Damaged_Fan_Un+Damaged_Lig
         <td><?php echo $row1["total_uv"]; ?></td>
         <td><?php echo $row1["total_pro"]; ?></td>
         <td><?php echo $row1["total_sol"]; ?></td>
-        <!-- <td><?php echo $row1["Modified_Date"]; ?></td> -->
+       
       </tr>
     <?php
     }
