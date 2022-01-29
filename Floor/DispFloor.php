@@ -51,6 +51,7 @@
     <td class="tdr"><?php echo $row1['Num_of_Washroom']; ?></td>
     <td style="width: 140px;">
     <button><a href="Delete.php?Floor_Number=<?php echo $row1["Floor_Number"]; ?>">Delete</a></button>
+    <button><a href="Update.php?Floor_Number=<?php echo $row1["Floor_Number"]; ?>">Update</a></button>
                             </td>
 		</tr> 
 	<?php 
