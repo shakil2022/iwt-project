@@ -54,7 +54,7 @@
 		<td class="tdr"><?php echo $row1['Damaged_Light_Un']; ?></td> 
 		<td class="tdr"><?php echo $row1['Damaged_Light_Pro']; ?></td> 
 		<td class="tdr"><?php echo $row1['Damaged_Light_Sol']; ?></td> 
-    <td class="tdr"><?php echo $row1['date'];?></td>
+    <td class="tdr"><?php echo $row1['Modified_Date'];?></td>
    
 
     <td style="width: 140px;">

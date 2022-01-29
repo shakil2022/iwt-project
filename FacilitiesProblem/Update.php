@@ -3,7 +3,7 @@ include_once 'connection.php';
 if(count($_POST)>0) {
 mysqli_query($conn,"UPDATE facility_problem set Damaged_Fan_Un='" . $_POST['Damaged_Fan_Un'] . "',
  Damaged_Fan_Pro='" . $_POST['Damaged_Fan_Pro'] . "', Damaged_Fan_Sol='" . $_POST['Damaged_Fan_Sol'] . "',
-  Damaged_Light_Un='" . $_POST['Damaged_Light_Un'] . "',Damaged_Light_Pro='" . $_POST['Damaged_Light_Pro'] . "',Damaged_Light_Sol='" . $_POST['Damaged_Light_Sol'] . "',date='" . $_POST['date'] . "' WHERE Room_Number='" . $_POST['Room_Number'] . "'");
+  Damaged_Light_Un='" . $_POST['Damaged_Light_Un'] . "',Damaged_Light_Pro='" . $_POST['Damaged_Light_Pro'] . "',Damaged_Light_Sol='" . $_POST['Damaged_Light_Sol'] . "',Modified_Date='" . $_POST['Modified_Date'] . "' WHERE Room_Number='" . $_POST['Room_Number'] . "'");
 //  $message = "Record Modified Successfully";
 include "DispFP.php";
 //require "DispStudent.php";
@@ -59,7 +59,7 @@ Damaged Ligth Solved:<br>
 <input style="width: 50%; height:30px; " type="number" name="Damaged_Light_Sol" class="txtField" value="<?php echo $row['Damaged_Light_Sol']; ?>">
 <br>
 Last Modifed Date:<br>
-<input style="width: 50%; height:30px; " type="date" name="date" class="txtField" value="<?php echo $row['date']; ?>">
+<input style="width: 50%; height:30px; " type="date" name="Modified_Date" class="txtField" value="<?php echo $row['Modified_Date']; ?>">
 <br>
 <!-- <br>
 Floor_Number:<br>

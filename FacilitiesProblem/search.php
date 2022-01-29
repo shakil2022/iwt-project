@@ -1,11 +1,8 @@
 <?php
-// error_reporting(0);
-// $conn = mysqli_connect("localhost","root","","student");
 include 'connection.php';
-// if(count($_POST)>0) {
-$Room_Number = $_POST['Room_Number'];
-$result = mysqli_query($conn, "SELECT * FROM facility_problem where Room_Number='$Room_Number' ");
-//}
+$Modified_Date = $_POST['Modified_Date'];
+$result = mysqli_query($conn, "SELECT Room_Number,sum(Damaged_Fan_Un+Damaged_Light_Un) as total_uv, sum(Damaged_Fan_Pro+Damaged_Light_Pro) as total_pro,sum(Damaged_Fan_Sol+Damaged_Light_Sol) as total_sol FROM facility_problem where Modified_Date='$Modified_Date' ");
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -44,12 +41,9 @@ $result = mysqli_query($conn, "SELECT * FROM facility_problem where Room_Number=
   <table class="center table table-striped">
     <tr>
       <td>Room Number</td>
-      <td> Damaged Fan Unsolved</td>
-      <td> Damaged Fan Processing</td>
-      <td> Damaged Solved</td>
-      <td> Damaged Light Unsolved</td>
-      <td> Damaged Light Processing</td>
-      <td> Damaged Light Solved</td>
+      <td> Total Unsolved</td>
+      <td> Total Processing</td>
+      <td> Total Solved</td>
       <td> Last Modified Date</td>
     </tr>
     <?php
@@ -57,13 +51,10 @@ $result = mysqli_query($conn, "SELECT * FROM facility_problem where Room_Number=
     ?>
       <tr>
         <td><?php echo $row1["Room_Number"]; ?></td>
-        <td><?php echo $row1["Damaged_Fan_Un"]; ?></td>
-        <td><?php echo $row1["Damaged_Fan_Pro"]; ?></td>
-        <td><?php echo $row1["Damaged_Fan_Sol"]; ?></td>
-        <td><?php echo $row1["Damaged_Light_Un"]; ?></td>
-        <td><?php echo $row1["Damaged_Light_Pro"]; ?></td>
-        <td><?php echo $row1["Damaged_Light_Sol"]; ?></td>
-        <td><?php echo $row1["date"]; ?></td>
+        <td><?php echo $row1["total_uv"]; ?></td>
+        <td><?php echo $row1["total_pro"]; ?></td>
+        <td><?php echo $row1["total_sol"]; ?></td>
+        </td><?php echo $row1["Modified_Date"]; ?></td>
       </tr>
     <?php
     }
