@@ -45,9 +45,8 @@ $result = mysqli_query($conn, "SELECT Room_Number,sum(Damaged_Fan_Un+Damaged_Lig
   </style>
 </head>
 
-<body style="background-color:darkslategray;">
+<body style="background-color:skyblue;">
   <table id="sea" class="center table table-striped">
-    <!-- <th colspan="5">hello</th> -->
     <tr>
       <td>Room Number</td>
       <td> Total Unsolved</td>
