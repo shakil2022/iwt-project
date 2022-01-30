@@ -59,7 +59,7 @@ Damaged Ligth Solved:<br>
 <input style="width: 50%; height:30px; " type="number" name="Damaged_Light_Sol" class="txtField" value="<?php echo $row['Damaged_Light_Sol']; ?>">
 <br>
 Last Modifed Date:<br>
-<input style="width: 50%; height:30px; " type="date" name="Modified_Date" class="txtField" value="<?php echo $row['Modified_Date']; ?>">
+<input style="width: 50%; height:30px; " type="text" name="Modified_Date" class="txtField" value="<?php echo $row['Modified_Date']; ?>">
 <br>
 <!-- <br>
 Floor_Number:<br>

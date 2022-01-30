@@ -1,7 +1,10 @@
 <?php
+// $search = $_POST['search'];
+// $Modified_Date = $_POST['Modified_Date'];
 include 'connection.php';
-$Modified_Date = $_POST['Modified_Date'];
-$result = mysqli_query($conn, "SELECT Room_Number,sum(Damaged_Fan_Un+Damaged_Light_Un) as total_uv, sum(Damaged_Fan_Pro+Damaged_Light_Pro) as total_pro,sum(Damaged_Fan_Sol+Damaged_Light_Sol) as total_sol FROM facility_problem where Modified_Date='$Modified_Date' ");
+
+$Modified_Date=$_POST['Modified_Date'];
+$result = mysqli_query($conn, "SELECT Room_Number,sum(Damaged_Fan_Un+Damaged_Light_Un) as total_uv, sum(Damaged_Fan_Pro+Damaged_Light_Pro) as total_pro,sum(Damaged_Fan_Sol+Damaged_Light_Sol) as total_sol,Modified_Date FROM facility_problem where Modified_Date='$Modified_Date' ");
 
 ?>
 <!DOCTYPE html>
@@ -35,11 +38,16 @@ $result = mysqli_query($conn, "SELECT Room_Number,sum(Damaged_Fan_Un+Damaged_Lig
       font-size: 16px;
     
     }
+    #sea{
+      margin-top: 70px;
+      margin-left: 400px;
+    }
   </style>
 </head>
 
 <body style="background-color:darkslategray;">
-  <table class="center table table-striped">
+  <table id="sea" class="center table table-striped">
+    <!-- <th colspan="5">hello</th> -->
     <tr>
       <td>Room Number</td>
       <td> Total Unsolved</td>
@@ -48,6 +56,7 @@ $result = mysqli_query($conn, "SELECT Room_Number,sum(Damaged_Fan_Un+Damaged_Lig
       <td> Last Modified Date</td>
     </tr>
     <?php
+    // $Modified_Date = $_POST['Modified_Date'];
     while ($row1 = mysqli_fetch_array($result)) {
     ?>
       <tr>
@@ -55,7 +64,8 @@ $result = mysqli_query($conn, "SELECT Room_Number,sum(Damaged_Fan_Un+Damaged_Lig
         <td><?php echo $row1["total_uv"]; ?></td>
         <td><?php echo $row1["total_pro"]; ?></td>
         <td><?php echo $row1["total_sol"]; ?></td>
-        </td><?php echo $row1["Modified_Date"]; ?></td>
+        <td><?php echo $row1["Modified_Date"]; ?></td>
+       
       </tr>
     <?php
     }

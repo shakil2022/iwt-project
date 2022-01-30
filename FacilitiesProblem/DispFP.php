@@ -6,8 +6,9 @@
     
     <style>
 		body{
-			background-image: url(../images/img2.jpg);
-			background-size: cover;
+			/* background-image: url(../images/img2.jpg);
+			background-size: cover; */
+			background-color: lightskyblue;
 			
 		}
       .tdr{

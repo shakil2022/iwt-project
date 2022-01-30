@@ -42,7 +42,8 @@
 			  <th> Name </th> 
         <th> Address </th> 
 			  <th> Email </th> 
-			  <th> Designation</th> 			  
+			  <th> Designation</th> 	
+        <th> Operations</th> 		  
 		</tr> 
    
 		<?php 

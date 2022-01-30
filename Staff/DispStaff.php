@@ -34,6 +34,7 @@
         <th> Address </th> 
 			  <th> Email </th> 
 			  <th> Designation</th> 
+        <td> Operations</td>
 			  
 		</tr> 
 		<?php 

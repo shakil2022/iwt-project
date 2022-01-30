@@ -43,6 +43,7 @@ table, th, td {
 <td> Email</td>
 <td> Designation</td>
 
+
 </tr>
 <?php
 while($row1 = mysqli_fetch_array($result)) {
