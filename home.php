@@ -10,17 +10,16 @@ endif;?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
     <link rel="shortcut icon" href="https://juniv.edu/images/favicon.ico">
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="../img/favicon.ico" rel="icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="home.css" />
-
     
 
 <style>
@@ -722,23 +721,23 @@ endif;?>
             <div class="col-lg-5 d-flex align-items-stretch">
               <div class="info">
                 <div class="address">
-                  <i class="bx bx-home"></i>
+                <i class="bx bx-home"></i>
                   <h4>Location:</h4>
-                  <p>savar,Dhaka,Bangladesh</p>
+                  <p>Jahanginagar University,savar</p>
                 </div>
                 
                 <div class="mail">
                     <i class="bx bx-envelope"></i>
                     <h4>mail:</h4>
-                    <p>shakil.stu2018@juniv.edu</p>
+                    <p>ssbhall@gmail.com</p>
                   </div>
   
                 <div class="phone">
                   <i class="bx bxl-skype"></i>
                   <h4>Call:</h4>
-                  <p>01764808404</p>
+                  <p>02224491052</p>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29185.612906028808!2d90.24822211330405!3d23.88246845078362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755e998af65bee5%3A0x51e41cefc20b8fa8!2sJahangirnagar%20University%2C%20Savar%20Union!5e0!3m2!1sen!2sbd!4v1642614015669!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.2035801530205!2d90.26202471481797!3d23.882398684524446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755e9a02b7f1e89%3A0x6d20e40f3a231f37!2sShaheed%20Salam%20Barkat%20Hall!5e0!3m2!1sen!2sbd!4v1647113157126!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
               </div>
   
             </div>
@@ -810,7 +809,7 @@ endif;?>
         <h3>contact info</h3>
         <a href="#"> <i class="fas fa-phone"></i> 1324 </a>
         <a href="#"> <i class="fas fa-phone"></i> 02224491045-51  </a>
-        <a href="#"> <i class="fas fa-envelope"></i> shaheedsalambarkathalll@gmail.com </a>
+        <a href="#"> <i class="fas fa-envelope"></i> ssbhall@gmail.com </a>
         <a href="https://www.google.com/maps/place/Shaheed+Salam+Barkat+Hall/@23.8823987,90.2620247,17z/data=!3m1!4b1!4m5!3m4!1s0x3755e9a02b7f1e89:0x6d20e40f3a231f37!8m2!3d23.8823987!4d90.2642134"> <i class="fas fa-map-marker-alt"></i> Jahangirnagar University, Savar, Dhaka-1342, Bangladesh. </a>
     </div>
 
