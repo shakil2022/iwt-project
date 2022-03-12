@@ -781,6 +781,7 @@ endif;?>
       </section>
      <!-- Contact End -->
 
+
 <!-- footer start -->
 
 <section class="footer">
@@ -824,14 +825,43 @@ endif;?>
 
 </div>
 
-<div class="credit"> created by <span>Group 8</span> | all rights reserved </div>
+
 
 </section>
 
 
 
 <!-- footer end -->
+<!-- footer -->
+<div class="container-fluid bg-dark text-white mt-5 py-1 px-sm-1 px-md-5" style="height: 150px;">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4" style="margin-top: 5px;">
+                <a class="btn btn-light btn-social mr-2" href="https://twitter.com/2013_shakil" target="_blank"><i class="fab fa-twitter" ></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/profile.php?id=100015160248051&sk=friends" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/md-shakil-ahmed-b173b91ba/"  target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social" href="https://www.instagram.com/2013_shakil_ahmed/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <!-- <div class="d-flex justify-content-center mb-3">
+                <a class="text-white" href="#">Privacy</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Terms</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">FAQs</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Help</a>
+            </div> -->
+            <!-- <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Shakil Ahmed</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="#"></a>
+            </p> -->
+            <div class="credit"> created by <span>Group 8</span> | all rights reserved </div>
+        </div>
+    </div>
+     <!-- footer -->
 
+ <!-- Scroll to Bottom -->
+ <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
 
