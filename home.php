@@ -569,10 +569,10 @@ endif;?>
     <div class="box">
         <h3>quick links</h3>
         <a href="#"> <i class="fas fa-chevron-right"></i> home </a>
-        <a href="Provost/DispProvost.php"> <i class="fas fa-chevron-right"></i> Provost </a>
-        <a href="Student/DispStudent.php"> <i class="fas fa-chevron-right"></i> Student </a>
-        <a href="Staff/DispStaff.php"> <i class="fas fa-chevron-right"></i> Staff </a>
-        <a href="FacilitiesProblem/DispFP.php"> <i class="fas fa-chevron-right"></i> Facilities Problem</a>
+        <a href="Provost/output.php"> <i class="fas fa-chevron-right"></i> Provost </a>
+        <a href="Student/output.php"> <i class="fas fa-chevron-right"></i> Student </a>
+        <a href="Staff/output.php"> <i class="fas fa-chevron-right"></i> Staff </a>
+        <a href="FacilitiesProblem/output.php"> <i class="fas fa-chevron-right"></i> Facilities Problem</a>
     </div>
 
     <div class="box">
@@ -589,12 +589,12 @@ endif;?>
         <a href="#"> <i class="fas fa-phone"></i> 1324 </a>
         <a href="#"> <i class="fas fa-phone"></i> 02224491045-51  </a>
         <a href="#"> <i class="fas fa-envelope"></i> shaheedsalambarkathalll@gmail.com </a>
-        <a href="https://goo.gl/maps/gCv8rquk261n7FnXA"> <i class="fas fa-map-marker-alt"></i> Jahangirnagar University, Savar, Dhaka-1342, Bangladesh. </a>
+        <a href="https://www.google.com/maps/place/Shaheed+Salam+Barkat+Hall/@23.8823987,90.2620247,17z/data=!3m1!4b1!4m5!3m4!1s0x3755e9a02b7f1e89:0x6d20e40f3a231f37!8m2!3d23.8823987!4d90.2642134"> <i class="fas fa-map-marker-alt"></i> Jahangirnagar University, Savar, Dhaka-1342, Bangladesh. </a>
     </div>
 
     <div class="box">
         <h3>follow us</h3>
-        <a target="_blank"  href="https://www.facebook.com/Medical-Centre-Jahangirnagar-University-111006755903584/?ref=page_internal"> <i class="fab fa-facebook-f"></i> facebook </a>
+        <a target="_blank"  href="https://www.facebook.com/ssbhju" target="_blank"> <i class="fab fa-facebook-f"></i> facebook </a>
         <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
         <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
         <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
