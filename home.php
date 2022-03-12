@@ -287,11 +287,11 @@ endif;?>
 
 
 <!-- photo galery -->
-<section class="photo_galary" style="width: 100%; margin-top:20px">
+<!-- <section class="photo_galary" style="width: 100%; margin-top:20px">
 <div >
     <h2 class="display-1 bdr my-4 text-center" style="margin-top: 10px;">Photo Galary</h2>
 </div>
-<!-- slick carousel/testimonial -->
+
 <div class="bg-dark">
     <div class="container">
      <div class="row pslick">
@@ -381,20 +381,20 @@ endif;?>
        </div>
      </div>
     </div>
-</div>
-</section>
+</div> 
+</section> -->
 
 <!-- testimonial  end -->
 
 <!-- portfolio start -->
-<section style="margin-top: 20px;">
+<!-- <section style="margin-top: 20px;">
 <div >
     <h2 class="display-1 bdr my-4 text-center">About</h2>
 </div>
 
-<!-- nav tabs -->
+
 <div class="container">
-    <!-- tab button start-->
+    
     <ul class="nav nav-tabs justify-content-center">
      <li class="nav-item">
        <a href="#floor" data-toggle="tab" class="nav-link active" >
@@ -413,11 +413,9 @@ endif;?>
      </li>
     </ul>
     
-    <!-- tab button end-->
-
- <!-- tab button content start-->
+    
     <div class="tab-content">
-     <!-- Floor  -->
+     
      <div class="tab-pane container active my-4 fade show" id="Floor">
        <div class="row">
          <div class="col-5 m-2 m-md-0 col-md-3">
@@ -442,7 +440,7 @@ endif;?>
          </div>
        </div>
      </div>
-     <!-- Room -->
+   
      <div class="tab-pane container my-4 fade show" id="Room">
        <div class="row">
          <div class="col-6 col-md-3">
@@ -467,7 +465,7 @@ endif;?>
          </div>
        </div>
      </div>
-     <!--Canteen-->
+    
 
      <div class="tab-pane container my-4 fade show" id="Canteen">
        <div class="row">
@@ -494,18 +492,159 @@ endif;?>
        </div>
      </div>
     </div>
-    <!-- tab button content end-->
+ 
     
 </div>
-</section>
+</section> -->
 
 <!-- portfolio end -->
 
+<!-- Portfolio Start -->
+<!-- <ul class="nav nav-tabs justify-content-center">
+     <li class="nav-item">
+       <a href="#floor" data-toggle="tab" class="nav-link active" >
+         Floor
+       </a>
+     </li>
+     <li class="nav-item">
+       <a href="#Room" class="nav-link" data-toggle="tab">
+       Room
+       </a>
+     </li>
+     <li class="nav-item">
+       <a href="#Canteen" class="nav-link" data-toggle="tab">
+      Canteen
+       </a>
+     </li>
+    </ul> -->
+    <!-- <section id="contact" class="contact">
+ <h1 class=" heading">Contact</h1>
+        <div class="container" id="cont">
+  
+          <div class="section-title" id="sec_cond"> -->
+<div class="container-fluid pt-5 pb-3" id="portfolio" style="margin-top:20px">
+<h1 class=" heading">Galary</h1>
+<div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first"><a href="#room" > Room </a>
+                      </li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second"><a href="#floor" >Floor</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third"><a href="#canteen" >Canteen</li>
+                    </ul>
+                </div>
+            </div>
+        <div class="container" id="cont">
+            <div class="position-relative d-flex align-items-center justify-content-center"id="sec_cond1">
+                <!-- <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-size:100px">Gallery</h1> -->
+                
+                <!-- <h1 class="position-absolute text-uppercase text-primary" style="font: size 3.5rem;;">Galary</h1> -->
+                <!-- <center> <h1 class="heading">  <span>gallery</span> </h1></center> -->
+         
+            
+            <div class="row portfolio-container" id="room">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" >
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="images/Room1.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="images/Room1.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second" id="room">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="images/Room2.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="images/Room2.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second" id="room">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="images/Room3.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="images/Room3.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third" id="floor">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="images/Floor1.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="images/Floor1.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" id="floor">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="images/Floor2.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="images/Floor2.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third" id="floor">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="images/Floor2.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="images/Floor2.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second" id="canteen">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="images/canteen1.jpeg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="images/canteen1.jpeg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third" id="canteen">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="images/canteen1.jpeg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="images/canteen1.jpeg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third" id="canteen">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="images/canteen3.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="images/canteen3.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Portfolio End -->
+
 <!-- contact start -->
-<section style="margin-top: 30px;">
+<!-- <section style="margin-top: 30px;">
 <div id="contact">
 <center> <h1 class="heading">  <span>Contact</span> </h1></center>
-    <!-- <h2 class="display-1 bdr my-4 text-center">Contact</h2> -->
+  
 </div>
 
 <div class="container">
@@ -528,9 +667,11 @@ endif;?>
      </div>
     </div>
 </div>
-</section>
+</section> -->
 <!-- message section start-->
-<section style="margin-top: 30px;">
+
+
+<!-- <section style="margin-top: 30px;">
 <div>
      <h3 class="text-center my-4" style="border-bottom: 1px solid red; margin-top:10px">Send Your Message</h3>
 
@@ -559,10 +700,87 @@ endif;?>
      </form>
     </div>
     </section>
-    
+     -->
 <!-- message section end -->
 
 <!-- contact end -->
+
+ <!-- Contact Start -->
+
+
+ <section id="contact" class="contact">
+ <h1 class=" heading">Contact</h1>
+        <div class="container" id="cont">
+  
+          <div class="section-title" id="sec_cond">
+         
+            <!-- <p>If you have any query or douts please contact me.Thanks!!!!!</p> -->
+            <!-- </div> -->
+  
+          <div class="row" data-aos="fade-in">
+  
+            <div class="col-lg-5 d-flex align-items-stretch">
+              <div class="info">
+                <div class="address">
+                  <i class="bx bx-home"></i>
+                  <h4>Location:</h4>
+                  <p>savar,Dhaka,Bangladesh</p>
+                </div>
+                
+                <div class="mail">
+                    <i class="bx bx-envelope"></i>
+                    <h4>mail:</h4>
+                    <p>shakil.stu2018@juniv.edu</p>
+                  </div>
+  
+                <div class="phone">
+                  <i class="bx bxl-skype"></i>
+                  <h4>Call:</h4>
+                  <p>01764808404</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29185.612906028808!2d90.24822211330405!3d23.88246845078362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755e998af65bee5%3A0x51e41cefc20b8fa8!2sJahangirnagar%20University%2C%20Savar%20Union!5e0!3m2!1sen!2sbd!4v1642614015669!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Email</label>
+                    <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validate"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="name">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                  <label for="name">Message</label>
+                  <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                  <div class="validate"></div>
+                </div>
+                <div class="mb-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <!-- <div class="text-center"><button type="submit">Send Message</button></div> -->
+              </form>
+            </div>
+  
+          </div>
+          </div>
+        </div>
+      </section>
+     <!-- Contact End -->
 
 <!-- footer start -->
 
@@ -640,6 +858,7 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- slick slider js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
 
 <script>
     $('.pslick').slick({
