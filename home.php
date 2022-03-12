@@ -504,7 +504,8 @@ endif;?>
 <!-- contact start -->
 <section style="margin-top: 30px;">
 <div id="contact">
-    <h2 class="display-1 bdr my-4 text-center">Contact</h2>
+<center> <h1 class="heading">  <span>Contact</span> </h1></center>
+    <!-- <h2 class="display-1 bdr my-4 text-center">Contact</h2> -->
 </div>
 
 <div class="container">
@@ -526,8 +527,11 @@ endif;?>
        </address>
      </div>
     </div>
-
-    <div>
+</div>
+</section>
+<!-- message section start-->
+<section style="margin-top: 30px;">
+<div>
      <h3 class="text-center my-4" style="border-bottom: 1px solid red; margin-top:10px">Send Your Message</h3>
 
      <form action="">
@@ -554,9 +558,9 @@ endif;?>
        
      </form>
     </div>
+    </section>
     
-</div>
-</section>
+<!-- message section end -->
 
 <!-- contact end -->
 
