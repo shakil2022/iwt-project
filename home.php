@@ -125,12 +125,12 @@ endif;?>
 
 
         <nav class="navbar">
-           <a href="#provost"style=" text-decoration:none; " >Provost</a>
-            <a href="Student/DispStudent.php"style=" text-decoration:none; " >Student</a>
-            <a href="Staff/DispStaff.php"style=" text-decoration:none; ">Staff</a>
-            <a href="Floor/DispFloor.php"style=" text-decoration:none; ">Floor</a>
-            <a href="Room/DispRoom.php"style=" text-decoration:none; ">Room</a>
-            <a href="FacilitiesProblem/DispFP.php"style=" text-decoration:none; ">Facilities Problem</a>
+           <a href="provost/output.php"style=" text-decoration:none; " >Provost</a>
+            <a href="Student/output.php"style=" text-decoration:none; " >Student</a>
+            <a href="Staff/output.php"style=" text-decoration:none; ">Staff</a>
+            <a href="Floor/output.php"style=" text-decoration:none; ">Floor</a>
+            <a href="Room/output.php"style=" text-decoration:none; ">Room</a>
+            <a href="FacilitiesProblem/output.php"style=" text-decoration:none; ">Facilities Problem</a>
             <!-- <a href="http://localhost:3000/php/index.php">logout <i class="fa fa-sign-out" aria-hidden="true"></i> -->
             <!-- <a href="dashboard/home.php"style=" text-decoration:none; ">Admin</a> -->
             <a href="login.php"style=" text-decoration:none; ">admin</a>
