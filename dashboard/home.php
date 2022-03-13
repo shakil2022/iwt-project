@@ -181,20 +181,20 @@
                     <a href="../Staff/DispStaff.php"><i class="fas fa-user-injured"></i> Staff</a>
                </li>
                <li>
-                    <a href="../Floor/DispFloor.php"><i class="fas fa-file-medical-alt"></i> Floor</a>
+                    <a href="../Floor/DispFloor.php"><i class="fas fa-building"></i> Floor</a>
 
                </li>
                <li>
-                    <a href="../Room/DispRoom.php"><i class="fas fa-procedures"></i> Room</a>
+                    <a href="../Room/DispRoom.php"><i class="fa fa-bed"></i> Room</a>
 
                </li>
                <li>
-                    <a href="../FacilitiesProblem/DispFP.php"><i class="fas fa-ambulance"></i> Facilities Problem</a>
+                    <a href="../FacilitiesProblem/DispFP.php"><i class="fas fa-exclamation-triangle"></i> Facilities Problem</a>
 
                </li>
-               <!-- <li>
-                    <a href="/php/medicine/medicine.php"><i class="fas fa-medkit"></i> Medicine</a>
-               </li> -->
+               <li>
+                    <a href="../message/disp.php"><i class="fas fa-envelope-open"></i> Mesages</a>
+               </li>
           </ul>
 
           <!-- logoutbutton -->
@@ -325,21 +325,21 @@
                     </div>
                </a>
 
-               <!-- <a href="/php/medicine/medicine.php" rel="">
+               <a href="../message/disp.php" rel="">
                     <div class="cardspecific" style="width: 18%;">
-                         Medicine
+                         Messages
 
                          <div class="number">
                               <?php
-                              include 'db_conn.php';
-                              $sql = "select count(*) as total from medicine";
+                              include 'connection.php';
+                              $sql = "select count(*) as total from message_table";
                               $result = mysqli_query($conn, $sql);
                               $data = mysqli_fetch_assoc($result);
                               echo $data['total'];
                               ?>
                          </div>
                     </div>
-               </a> -->
+               </a>
 
           </div>
 

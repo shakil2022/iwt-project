@@ -34,7 +34,7 @@
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
 		$stmt = $conn->prepare("insert into message_table(Stu_ID, Name, Room_Num, Messages) values(?, ?, ?, ?)");
-		$stmt->bind_param("isss", $Stu_ID, $Name, $Room_Num, $Messages);
+		$stmt->bind_param("isss",$Stu_ID, $Name, $Room_Num, $Messages);
 		$execval = $stmt->execute();
 		echo $execval;
 		// echo "Inserted successfully...";
