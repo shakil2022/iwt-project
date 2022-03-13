@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jan 28, 2022 at 07:58 AM
--- Server version: 5.7.36
--- PHP Version: 7.4.26
+-- Generation Time: Mar 13, 2022 at 06:59 AM
+-- Server version: 5.7.31
+-- PHP Version: 7.3.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -46,6 +46,37 @@ INSERT INTO `facilities_problem` (`Room_Number`, `Vacant_Seat`, `Damaged_Fan`, `
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `facility_problem`
+--
+
+DROP TABLE IF EXISTS `facility_problem`;
+CREATE TABLE IF NOT EXISTS `facility_problem` (
+  `Room_Number` int(11) NOT NULL,
+  `Damaged_Fan_Un` int(11) NOT NULL,
+  `Damaged_Fan_Pro` int(11) NOT NULL,
+  `Damaged_Fan_Sol` int(11) NOT NULL,
+  `Damaged_Light_Un` int(11) NOT NULL,
+  `Damaged_Light_Pro` int(11) NOT NULL,
+  `Damaged_Light_Sol` int(11) NOT NULL,
+  `Modified_Date` date NOT NULL,
+  `total_uv` int(20) DEFAULT NULL,
+  `total_pro` int(20) DEFAULT NULL,
+  `total_sol` int(20) DEFAULT NULL,
+  PRIMARY KEY (`Room_Number`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `facility_problem`
+--
+
+INSERT INTO `facility_problem` (`Room_Number`, `Damaged_Fan_Un`, `Damaged_Fan_Pro`, `Damaged_Fan_Sol`, `Damaged_Light_Un`, `Damaged_Light_Pro`, `Damaged_Light_Sol`, `Modified_Date`, `total_uv`, `total_pro`, `total_sol`) VALUES
+(101, 2, 3, 4, 5, 34, 4, '2022-01-04', NULL, NULL, NULL),
+(234, 1, 2, 3, 4, 5, 6, '2022-01-26', NULL, NULL, NULL),
+(321, 3, 2, 5, 1, 3, 2, '2022-01-26', NULL, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `floor`
 --
 
@@ -65,21 +96,31 @@ CREATE TABLE IF NOT EXISTS `floor` (
 
 INSERT INTO `floor` (`Floor_Number`, `Block`, `Num_of_Kitchen`, `Num_of_Room`, `Num_of_Washroom`) VALUES
 ('1/A', 'A', 4, 100, 20),
-('2/B', 'B', 6, 150, 30);
+('2/B', 'B', 6, 150, 30),
+('1/B', 'B', 43, 321, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `message`
+-- Table structure for table `message_table`
 --
 
-DROP TABLE IF EXISTS `message`;
-CREATE TABLE IF NOT EXISTS `message` (
-  `id` int(11) NOT NULL,
-  `name` varchar(40) NOT NULL,
-  `message` varchar(1000) NOT NULL,
-  PRIMARY KEY (`id`)
+DROP TABLE IF EXISTS `message_table`;
+CREATE TABLE IF NOT EXISTS `message_table` (
+  `Stu_ID` int(20) DEFAULT NULL,
+  `Name` varchar(20) NOT NULL,
+  `Room_Num` varchar(20) DEFAULT NULL,
+  `Messages` varchar(100) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `message_table`
+--
+
+INSERT INTO `message_table` (`Stu_ID`, `Name`, `Room_Num`, `Messages`) VALUES
+(2013, 'Shakil Ahmed', '125/A', 'problem a fan and light'),
+(2090, 'Amit Azim', '125/A', 'Door problem'),
+(2090, 'Amit Azim', '125/A', 'Door problem');
 
 -- --------------------------------------------------------
 
@@ -149,8 +190,7 @@ CREATE TABLE IF NOT EXISTS `staff` (
 --
 
 INSERT INTO `staff` (`S_ID`, `Name`, `Address`, `Email`, `Designation`) VALUES
-(4001, 'motiur', 'Gerua, Savar', 'motiur.staff@juniv.edu', 'Office Assistant'),
-(40007, 'Illion', 'pandhoa', 'illion.staff@juniv.edu', 'Canteen Boy');
+(4001, 'motiur', 'Gerua, Savar', 'motiur.staff@juniv.edu', 'Office Assistant');
 
 -- --------------------------------------------------------
 
