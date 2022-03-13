@@ -528,7 +528,22 @@ color: black;
 
 }
 
-
+/* message section */
+.message{
+  /* font-size: 20px;
+  font-family: 'Courier New', Courier, monospace; */
+  padding: 0 0 0 60px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #050d18;
+}
+#button_mes{
+  padding: 0 0 0 60px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
 
 /*====================== Back to buttom ==================*/
 

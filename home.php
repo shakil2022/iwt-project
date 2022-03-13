@@ -751,7 +751,7 @@ endif;?>
                     <div class="validate"></div>
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="Name">Student Name</label>
+                    <label for="Name" class="message">Student Name</label>
                     <input type="text" class="form-control" name="Name" id="Name" data-rule="Name" data-msg="Please enter a valid email" />
                     <div class="validate"></div>
                   </div>
@@ -766,12 +766,12 @@ endif;?>
                 />
               </div> -->
                 <div class="form-group">
-                  <label for="Room_Num">Room Number</label>
+                  <label for="Room_Num" class="message">Room Number</label>
                   <input type="text" class="form-control" name="Room_Num" id="Room_Num" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                   <div class="validate"></div>
                 </div>
                 <div class="form-group">
-                  <label for="Messages">Message</label>
+                  <label for="Messages" class="message">Message</label>
                   <textarea class="form-control" name="Messages" id="Messages" rows="15" data-rule="required" data-msg="Please write something for us"></textarea>
                   <div class="validate"></div>
                 </div>
@@ -780,7 +780,7 @@ endif;?>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
+                <div class="text-center"  id="button_mes"><button type="submit">Send Message</button></div>
               </form>
             </div>
   
