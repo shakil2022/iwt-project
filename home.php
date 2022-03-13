@@ -700,7 +700,7 @@ endif;?>
     </div>
     </section>
      -->
-<!-- message section end -->
+
 
 <!-- contact end -->
 
