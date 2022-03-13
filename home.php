@@ -700,7 +700,7 @@ endif;?>
     </div>
     </section>
      -->
-<!-- message section end -->
+
 
 <!-- contact end -->
 
@@ -772,7 +772,7 @@ endif;?>
                 </div>
                 <div class="form-group">
                   <label for="Messages" class="message">Message</label>
-                  <textarea class="form-control" name="Messages" id="Messages" rows="15" data-rule="required" data-msg="Please write something for us"></textarea>
+                  <textarea type="text" class="form-control" name="Messages" id="Messages" rows="15" data-rule="required" data-msg="Please write something for us"></textarea>
                   <div class="validate"></div>
                 </div>
                 <div class="mb-3">
