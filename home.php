@@ -743,27 +743,36 @@ endif;?>
             </div>
   
             <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <form action="message/message.php" method="post" role="form" class="php-email-form">
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="name">Your Name</label>
-                    <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <label for="Stu_ID" class="message">Student ID</label>
+                    <input type="number" name="Stu_ID" class="form-control" id="Stu_ID" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                     <div class="validate"></div>
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="name">Your Email</label>
-                    <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                    <label for="Name">Student Name</label>
+                    <input type="text" class="form-control" name="Name" id="Name" data-rule="Name" data-msg="Please enter a valid email" />
                     <div class="validate"></div>
                   </div>
                 </div>
+                <!-- <div class="form-group">
+                <label for="Stu_id">Student ID</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="Stu_id"
+                  name="Stu_id"
+                />
+              </div> -->
                 <div class="form-group">
-                  <label for="name">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <label for="Room_Num">Room Number</label>
+                  <input type="text" class="form-control" name="Room_Num" id="Room_Num" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                   <div class="validate"></div>
                 </div>
                 <div class="form-group">
-                  <label for="name">Message</label>
-                  <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                  <label for="Messages">Message</label>
+                  <textarea class="form-control" name="Messages" id="Messages" rows="15" data-rule="required" data-msg="Please write something for us"></textarea>
                   <div class="validate"></div>
                 </div>
                 <div class="mb-3">
@@ -771,7 +780,7 @@ endif;?>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div>
-                <!-- <div class="text-center"><button type="submit">Send Message</button></div> -->
+                <div class="text-center"><button type="submit">Send Message</button></div>
               </form>
             </div>
   
